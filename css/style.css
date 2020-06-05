@@ -245,3 +245,72 @@ header {
 }
 
 /* END OF CEO QUOTE SECTION */
+/* ABOUT COINBASE COLUMN*/
+.container{
+  width: 100%;
+  margin:1em auto;
+
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  
+}
+.card_1{
+ 
+  position: relative;
+  
+  padding: 4em;
+  margin-right: 1em;
+  border-radius: 1em;
+  border:.1em solid #FD749B;
+  transition: 0.3s;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+}
+.card_1:hover{
+  transform:scale(1.05);
+  /*box-shadow:0 0 40px -10px rgba(0, 0, 0, 0.25);*/
+}
+.about_coinbase_image{
+   align-self: center;
+  
+}
+.about_coinbase_content{
+  justify-content: center;
+  padding: 1em;
+  
+
+}
+.about_coinbase_msg{
+  text-align: center;
+}
+.about_coinbase_heading{
+margin-top:1em;
+text-align: center;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+color:#FD749B;
+}
+.about_coinbase_heading .img_heading{
+  margin-top:0;
+}
+.about_coinbase_icons{
+  margin-top: 1.5em;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  
+}
+.about_coinbase_icons .icon{
+  padding-right: 1.5em;
+}
+/* END OF ABOUT COINBASE COLUMN*/

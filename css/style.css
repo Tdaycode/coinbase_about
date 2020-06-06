@@ -17,6 +17,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font);
+  color: var(--darkColor);
 }
 
 a {
@@ -240,7 +241,7 @@ header {
   font-weight: normal;
   font-size: 14px;
   line-height: 25px;
-  color: var(--mainBlack);
+  color: var(--darkColor);
   margin-top: 0.7rem;
 }
 
@@ -252,21 +253,16 @@ header {
 }
 .row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  position: relative;
 }
 .card_1 {
-  position: relative;
   padding: 4em;
   margin-right: 1em;
   border-radius: 1em;
   border: 0.1em solid #fd749b;
   transition: 0.3s;
   justify-content: center;
-  position: absolute;
-  width: 50%;
+  width: 1048px;
 }
 .card_1:hover {
   transform: scale(1.05);
@@ -293,7 +289,8 @@ header {
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  color: #fd749b;
+  color: #FD749B;
+  
 }
 .about_coinbase_heading .img_heading {
   margin-top: 0;
@@ -310,3 +307,57 @@ header {
   padding-right: 1.5em;
 }
 /* END OF ABOUT COINBASE COLUMN*/
+
+/* OUR HISTORY SECTION */
+.our-history {
+  text-align: center;
+  display: flex;
+  padding: 0 14rem;
+  flex-direction: column;
+  position: relative;
+}
+.our-history h3 {
+  font-style: normal;
+  color: #FD749B;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 65px;
+  margin-bottom: 0;
+  color: linear-gradient(179.26deg, #FD749B -13.56%, #281AC8 158.3%);
+}
+.our-history div {
+  width: 26.125rem;
+  height: 13.1875rem;
+}
+.our-history>div:nth-child(3) {
+  justify-content: flex-start;
+  margin-top: 3.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: right;
+}
+.our-history>div:nth-child(4) {
+  justify-content: flex-end;
+  align-self: flex-end;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+}
+.our-history>div:nth-child(5) {
+  justify-content: flex-end;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: right;
+}
+.our-history .tree {
+  position: absolute;
+  align-self: center;
+  margin-top: 10rem;
+  height: 635px;
+}
+/* END OF OUR HISTORY COLUMN */

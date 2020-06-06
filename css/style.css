@@ -137,3 +137,127 @@ header {
 .header__end-cta:hover {
   transform: translateY(-5px);
 }
+
+/* team section */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 91px 0;
+}
+.section__heading,
+.section__paragraph {
+  font-family: var(--font);
+  font-style: normal;
+}
+
+.section__heading {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 65px;
+  /* for the color gradient on the heading */
+  background: -webkit-linear-gradient(
+    179.43deg,
+    #fd749b -13.56%,
+    #281ac8 158.3%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section__heading::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #fd749b;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 21px;
+}
+.section__paragraph {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 250%;
+  text-align: center;
+  margin-bottom: 61px;
+}
+
+.newsletter__rectangles {
+  position: relative;
+  width: 94%;
+  height: 299px;
+  display: flex;
+  align-items: center;
+}
+.newsletter__rectangles-element {
+  position: absolute;
+  background-color: #c4c4c4;
+  border-radius: 15px;
+}
+.newsletter__rectangles-element:nth-child(1),
+.newsletter__rectangles-element:nth-child(5) {
+  width: 299px;
+  height: 185px;
+}
+.newsletter__rectangles-element:nth-child(2),
+.newsletter__rectangles-element:nth-child(4) {
+  width: 299px;
+  height: 233px;
+}
+.newsletter__rectangles-element:nth-child(3) {
+  height: 299px;
+  width: 285px;
+}
+.first {
+  left: 163px;
+}
+.fifth {
+  left: 1028px;
+  z-index: -1;
+}
+.second {
+  left: 347px;
+}
+.third {
+  left: 601px;
+  background: linear-gradient(178.26deg, #f3b4c6 -13.56%, #666196 158.3%);
+  z-index: 2;
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}
+.fourth {
+  left: 855px;
+  z-index: 1;
+}
+.second,
+.fourth,
+.third {
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+}
+/* end of team section-------------------------------------------------- */
+
+/* subscription section */
+.section__form {
+  display: flex;
+}
+input.section-input {
+  width: 388px;
+  height: 54px;
+  border-radius: 100px;
+  padding: 17px;
+  border: 2px solid salmon;
+}
+.section-button,
+.section-input {
+  border: none;
+  font: var(--font);
+}
+.section-input:focus {
+  outline: none;
+}
+/* ----------------------------------------------------------------------- */

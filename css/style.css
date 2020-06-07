@@ -136,6 +136,7 @@ header {
   padding: 10px 12px;
   display: block;
   transition: all 0.1s ease-in;
+  color: var(--darkColor);
 }
 
 #header__menu-dropdown li a:hover {

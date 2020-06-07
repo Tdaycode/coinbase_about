@@ -6,31 +6,26 @@
   --shadow: 0px 10px 20px rgba(68, 85, 113, 0.0418648);
   --mainWhite: #fff;
 }
-
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
-
 body {
   padding: 0;
   margin: 0;
   font-family: var(--font);
   color: var(--darkColor);
 }
-
 a {
   text-decoration: none;
   color: var(--darkColor);
 }
-
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -43,18 +38,15 @@ header,
 .header__end-cta {
   display: flex;
 }
-
 header {
   margin: 35px 97px;
   height: 75px;
   justify-content: space-between;
   align-items: center;
 }
-
 .header__navigation {
   margin-left: 270px;
 }
-
 .header__navigation-link,
 .mod {
   font-size: 14px;
@@ -62,7 +54,6 @@ header {
   position: relative;
   color: var(--darkColor);
 }
-
 .header__navigation-link::after {
   content: '';
   position: absolute;
@@ -75,29 +66,23 @@ header {
   background: #fd749b;
   transition: all 0.2s ease-in;
 }
-
 .header__navigation-link:hover::after {
   width: 23px;
 }
-
 .header__navigation li ~ li {
   margin-left: 70px;
 }
-
 .header__end {
   margin-left: 100px;
 }
-
 .header__menu {
   position: relative;
   align-self: center;
   padding: 0 14px;
 }
-
 .mod {
   position: relative;
 }
-
 .mod::after {
   content: '';
   position: absolute;
@@ -109,14 +94,12 @@ header {
   border-left: 0.4em transparent solid;
   border-right: 0.4em transparent solid;
 }
-
 .header__menu:hover .mod::after {
   border-bottom: 0.4em solid var(--darkColor);
   border-top: none;
   border-left: 0.4em solid transparent;
   border-right: 0.4em solid transparent;
 }
-
 #header__menu-dropdown {
   position: absolute;
   top: 103%;
@@ -127,23 +110,19 @@ header {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .header__menu:hover #header__menu-dropdown {
   display: block;
 }
-
 #header__menu-dropdown li a {
   padding: 10px 12px;
   display: block;
   transition: all 0.1s ease-in;
   color: var(--darkColor);
 }
-
 #header__menu-dropdown li a:hover {
   color: white;
   background: linear-gradient(179.37deg, #fd749b -13.56%, #281ac8 158.3%);
 }
-
 .header__end-cta {
   background: linear-gradient(179.37deg, #fd749b -13.56%, #281ac8 158.3%);
   width: 157px;
@@ -157,10 +136,10 @@ header {
   font-weight: bold;
   transition: all 0.2s ease-in;
 }
-
 .header__end-cta:hover {
   transform: translateY(-5px);
 }
+/* end of styling for header section */
 
 /* HERO SECTION */
 .hero {
@@ -173,18 +152,15 @@ header {
   justify-content: space-evenly;
   z-index: -1;
 }
-
 .path {
   position: absolute;
   bottom: -40px;
   width: inherit;
   z-index: -1;
 }
-
 .hero-left p {
   color: var(--mainWhite);
 }
-
 .hero-left > p:nth-child(1) {
   margin-top: 10rem;
   height: 18px;
@@ -193,7 +169,6 @@ header {
   font-size: 0.75rem;
   line-height: 18px;
 }
-
 .hero-left > p:nth-child(2) {
   height: 120px;
   font-style: normal;
@@ -202,7 +177,6 @@ header {
   width: 461px;
   line-height: 60px;
 }
-
 .hero-left > p:nth-child(3) {
   width: 461px;
   height: 54px;
@@ -211,14 +185,12 @@ header {
   font-size: 1.125rem;
   line-height: 27px;
 }
-
 .hero-right {
   width: 549px;
   height: 405px;
   background-image: url('../coin-base-img/IMG.svg');
   margin-top: 6rem;
 }
-
 /* END OF HERO SECTION */
 
 /* CEO QUOTE SECTION */
@@ -229,109 +201,88 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .ceo-quote p q {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
   text-align: center;
+  background: -webkit-linear-gradient(179.58deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 .ceo-quote p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 25px;
   color: var(--darkColor);
-  margin-top: 0.7rem;
 }
-
 /* END OF CEO QUOTE SECTION */
+
 /* ABOUT COINBASE COLUMN*/
-.container {
-  width: 100%;
-  margin: 1em auto;
-}
-.row {
+.about_coinbase_container {
   display: flex;
-  justify-content: center;
-}
-.card_1 {
-  padding: 4em;
-  margin-right: 1em;
-  border-radius: 1em;
-  border: 0.1em solid #fd749b;
-  transition: 0.3s;
-  justify-content: center;
+  align-items: center;
   width: 1048px;
+  height: 792px;
+  margin: 0 auto;
+  border-radius: 1em;
+  border: 0.01em solid #fd749b;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.card_1:hover {
-  transform: scale(1.05);
-  /*box-shadow:0 0 40px -10px rgba(0, 0, 0, 0.25);*/
+.about_coinbase_container .about-image {
+  height: 329px;
 }
-.about_coinbase_image {
-  align-self: center;
-}
-.about_coinbase_image img {
-  display: block;
-  margin: auto;
-}
-.about_coinbase_content {
-  justify-content: center;
-  padding: 1em;
+.about_coinbase_container .about-text {
+  display: flex;
+  flex-direction: column;
 }
 .about_coinbase_msg {
   text-align: center;
+  width: 512px;
+  font-size: 16px;
+  line-height: 40px;
+  color: var(--darkColor);
 }
 .about_coinbase_heading {
-  margin-top: 1em;
-  text-align: center;
-  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  background: -webkit-linear-gradient(
-    179.43deg,
-    #fd749b -13.56%,
-    #281ac8 158.3%
-  );
+  line-height: 65px;
+  margin-bottom: 0;
+  background: -webkit-linear-gradient(179.49deg, #fd749b -13.56%, #281ac8 158.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.about_coinbase_heading .img_heading {
-  margin-top: 0;
-}
 .about_coinbase_icons {
-  margin-top: 1.5em;
+  width: 229.5px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-}
-.about_coinbase_icons .icon {
-  padding-right: 1.5em;
+  justify-content: space-between;
 }
 /* END OF ABOUT COINBASE COLUMN*/
 
 /* OUR HISTORY SECTION */
 .our-history {
   text-align: center;
+  width: 1048px;
+  margin: 0 auto;
   display: flex;
-  padding: 0 14rem;
+  padding: 0 4rem;
   flex-direction: column;
   position: relative;
 }
 .our-history h3 {
   font-style: normal;
-  color: #fd749b;
   font-weight: bold;
   font-size: 28px;
   line-height: 65px;
   margin-bottom: 0;
-  color: linear-gradient(179.26deg, #fd749b -13.56%, #281ac8 158.3%);
+  background: -webkit-linear-gradient(179.58deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .our-history div {
   width: 26.125rem;

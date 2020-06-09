@@ -419,10 +419,7 @@ header {
 }
 /* END OF OUR HISTORY COLUMN */
 /* team section */
-.section,
-.section * {
-  border: 1px solid red;
-}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -471,10 +468,11 @@ header {
 
 .newsletter__rectangles {
   position: relative;
-  width: 94%;
+  width: 90%;
   height: 299px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .newsletter__rectangles-element {
   position: absolute;
